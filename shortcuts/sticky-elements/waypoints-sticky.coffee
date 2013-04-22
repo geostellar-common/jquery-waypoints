@@ -66,6 +66,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
       $sticky = $(this).children ':first'
       shouldBeStuck = direction in ['down', 'right']
       $sticky.toggleClass options.stuckClass, shouldBeStuck
+      $wrap.toggleClass options.stuckClass, shouldBeStuck
       $wrap.height if shouldBeStuck then $sticky.outerHeight() else ''
       originalHandler.call this, direction if originalHandler?
     $wrap.waypoint options
